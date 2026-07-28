@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SecureCrypt | File Encryptor</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/6c5f4c9b6f.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+<nav>
+
+<div class="logo">
+<i class="fas fa-shield-alt"></i>
+SecureCrypt
+</div>
+
+<ul>
+
+<li><a href="#">Home</a></li>
+<li><a href="#encrypt">Encrypt</a></li>
+<li><a href="#features">Features</a></li>
+<li><a href="#about">About</a></li>
+
+</ul>
+
+</nav>
+
+
+<section class="hero">
+
+<div class="hero-content">
+
+<h1>Protect Your Files with Strong Encryption</h1>
+
+<p>
+Encrypt and decrypt files securely using modern browser technology.
+Your files never leave your computer.
+</p>
+
+<a href="#encrypt" class="btn">
+Get Started
+</a>
+
+</div>
+
+</section>
+
+
+
+<section class="encrypt-section" id="encrypt">
+
+<h2>Secure File Encryption</h2>
+
+<div class="encrypt-card">
+
+<div class="drop-area" id="dropArea">
+
+<i class="fas fa-cloud-upload-alt"></i>
+
+<h3>Drag & Drop File Here</h3>
+
+<p>or</p>
+
+<input type="file" id="fileInput" hidden>
+
+<button onclick="document.getElementById('fileInput').click()">
+Choose File
+</button>
+
+</div>
+
+
+
+<div class="password-area">
+
+<label>Password</label>
+
+<input
+type="password"
+id="password"
+placeholder="Enter encryption password">
+
+</div>
+
+
+
+<div class="buttons">
+
+<button id="encryptBtn">
+Encrypt File
+</button>
+
+<button id="decryptBtn">
+Decrypt File
+</button>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+
+<section class="file-info">
+
+<h2>Selected File</h2>
+
+<div class="info-card">
+
+<p><strong>Name:</strong> <span id="fileName">No file selected</span></p>
+
+<p><strong>Size:</strong> <span id="fileSize">0 KB</span></p>
+
+<p><strong>Type:</strong> <span id="fileType">Unknown</span></p>
+
+</div>
+
+</section>
+
+
+
+
+<section id="features" class="features">
+
+<h2>Why SecureCrypt?</h2>
+
+<div class="feature-grid">
+
+<div class="feature-card">
+
+<i class="fas fa-lock"></i>
+
+<h3>Secure Encryption</h3>
+
+<p>AES-based encryption keeps your files protected.</p>
+
+</div>
+
+<div class="feature-card">
+
+<i class="fas fa-laptop"></i>
+
+<h3>Runs Locally</h3>
+
+<p>Your files stay on your computer.</p>
+
+</div>
+
+<div class="feature-card">
+
+<i class="fas fa-bolt"></i>
+
+<h3>Fast Processing</h3>
+
+<p>Quick encryption directly in your browser.</p>
+
+</div>
+
+<div class="feature-card">
+
+<i class="fas fa-user-shield"></i>
+
+<h3>Privacy First</h3>
+
+<p>No uploads. No tracking. No cloud storage.</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+
+<section id="about" class="about">
+
+<h2>About SecureCrypt</h2>
+
+<p>
+
+SecureCrypt is a browser-based file encryption tool designed to
+help users protect sensitive documents using password-based encryption.
+The encryption process happens locally within your browser,
+ensuring your files never leave your device.
+
+</p>
+
+</section>
+
+
+
+
+<footer>
+
+<p>
+
+© 2026 SecureCrypt |
+Designed for Cyber Security Portfolio
+
+</p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
